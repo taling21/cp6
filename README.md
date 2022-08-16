@@ -2,9 +2,9 @@
 (Time limit : 2s per test)  
 Krish likes candies a lot. His friends Tokas and Paras give him a challenge wherein he can earn candies. All Krish has to do is carry out a few instructions given to him.   
 As a part of his task, Krish has to walk on stepping stones. Each stepping stone has an energy cost(Ai) associated with it, which is the energy Krish spends if he steps on it. In a particular instruction, Krish has to go from stone a to stone b, where a and b will be given. Krish will start at a given stone.If Krish is already on a stone (the starting stone for an instruction), he doesn't  have to spend energy corresponding to that stone. For eg, if Krish wants to go from stone 0 to stone 2, he has to spend energy corresponding to stones 1 and 2.  
-Krish can step on a stone only if he has enough energy left  
+Krish can step on a stone only if he has enough energy left. 
 However, there are some magical stones involved. Such are the stones with prime numbers as there cost, and their magic results in Krish not spending any energy when he steps on them.  
-For each instruction that Krish completes, Tokas and Paras give him one candy.Your objective is to find the maximum number of candies Krish will get.
+For each instruction that Krish completes, Tokas and Paras give him one candy.Your objective is to find the number of candies Krish will get.
 ## Input  
  
 The first line contains 3 integers -  n, the number of stones(n<=10^5) , the total number of instructions t(<=10^5)  ,and Krish's initial energy k(k <= 10^6)  
