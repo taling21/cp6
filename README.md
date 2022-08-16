@@ -13,8 +13,8 @@ Next line contains (t + 1) integers. The first integer gives the starting point 
 
 ## Output  
 You have to output a single integer denoting the maximum number of candies Krish can get.  
-Note : 1. the indexing of stones starts from 0  
-       2.prime valued stones don't cost any energy
+Note :  the indexing of stones starts from 0  
+       
 
 
 ## Sample Input and Output   
