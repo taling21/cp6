@@ -7,8 +7,8 @@ However, there are some magical stones involved. Such are the stones with prime 
 For each instruction that Krish completes, Tokas and Paras give him one candy.Your objective is to find the maximum number of candies Krish will get.
 ## Input  
  
-The first line contains 3 integers -  n, the number of stones(n<=10^5) , the total number of instructions t(<=10^5)  ,and Krish's initial energy k(k <= 10^9)  
-The next line of each test case contains n integers(the costs of the stones).(0<= Ai <= 10^9)  
+The first line contains 3 integers -  n, the number of stones(n<=10^5) , the total number of instructions t(<=10^5)  ,and Krish's initial energy k(k <= 10^6)  
+The next line of each test case contains n integers(the costs of the stones).(0<= Ai <= 10^5)  
 Next line contains (t + 1) integers. The first integer gives the starting point of Krish, and each subsequent integer contains the next stone he has to go to  
 
 ## Output  
