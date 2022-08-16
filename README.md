@@ -32,7 +32,7 @@ From stone 2, Krish goes to stone 4 by spending 1 energy(2 is a prime, so no ene
 ## EDITORIAL  
 For this problem, it is clear that for each instruction, we need to sum up the numbers in the array from within the given indices. However, we can't use brute force, as the number of instructions is very large(O(n2) is not acceptable). Hence, we will use the data structure Segment tree, whose vertices will store the sum for certain indices range. Then, sum(i,j) = sum(i,k) + sum (k,j) where k lies between i and j. We will go through the vertices of the tree, and if the indices of the given vertex matches required indices, the value of that vertex will be the answer. Otherwise, we use the above fact if the required indices are part of two vertices.  
 
-Also, we need to take care of the primes. Take care of them while building the Segment Tree itself, and use Sieve algorithm for primality. Each instruction can be carried out in O(logn) time, making the overall time complexity as O(nlogn) ( n for the number of instructions).
+Also, we need to take care of the primes. Take care of them while building the Segment Tree itself, and use Sieve algorithm for primality. Each instruction can be carried out in O(logn) time, making the overall time complexity as O(nlogn) ( n for the number of instructions). And O(nloglogn) time for Sielve algorithm.
 
 
 
