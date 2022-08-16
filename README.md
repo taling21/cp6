@@ -28,7 +28,9 @@ Note : the indexing of stones starts from 0
 From stone 2, Krish goes to stone 4 by spending 1 energy(2 is a prime, so no energy spent). Next , he spends 5 energy and goes to stone 6. Now, to come to stone 1, he needs 4 + 1 + 1 + 9 = 15 energy, which he doesn't have left. Hence, he can get only 2 candies.Here, no primes were there in the indices of our interest  
 
 ## EDITORIAL  
-For this problem, it is clear that for each instruction, we need to sum up the numbers in the array from within the given indices. However, we can't use brute force, as the number of instructions is very large(O(n2) is not acceptable). Hence, we will use the data structure Segment tree, whose vertices will store the sum for certain indices range. Then, sum(i,j) = sum(i,k) + sum (k,j) where k lies between i and j. We will go through the vertices of the tree, and if the indices of the given vertex matches required indices, the value of that vertex will be the answer. Otherwise, we use the above fact if the required indices are part of two vertices.Each instruction can be carried out in O(logn) time, making the overall time complexity as O(nlogn) ( n for the number of instructions).
+For this problem, it is clear that for each instruction, we need to sum up the numbers in the array from within the given indices. However, we can't use brute force, as the number of instructions is very large(O(n2) is not acceptable). Hence, we will use the data structure Segment tree, whose vertices will store the sum for certain indices range. Then, sum(i,j) = sum(i,k) + sum (k,j) where k lies between i and j. We will go through the vertices of the tree, and if the indices of the given vertex matches required indices, the value of that vertex will be the answer. Otherwise, we use the above fact if the required indices are part of two vertices.  
+
+Also, we need to take care of the primes. Take care of them while building the Segment Tree itself, and use Sieve algorithm for primality. Each instruction can be carried out in O(logn) time, making the overall time complexity as O(nlogn) ( n for the number of instructions).
 
 
 
