@@ -20,7 +20,8 @@ Note : the indexing of stones starts from 0
 5 9 1 1 4 1 2  
 2 3 4 1 5 
 # Output
-2  
+2   
+
 #Explanation  
 
 From stone 2, Krish goes to stone 3 by spending 1 energy. Next , he spends 4 energy and goes to stone 4. Now, to come to stone 1, he needs 1 + 1 + 9 = 11 energy, which he doesn't have left. Hence, he can get only 2 candies.
