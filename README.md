@@ -24,7 +24,11 @@ Note : the indexing of stones starts from 0
 
 #Explanation  
 
-From stone 2, Krish goes to stone 3 by spending 1 energy. Next , he spends 4 energy and goes to stone 4. Now, to come to stone 1, he needs 1 + 1 + 9 = 11 energy, which he doesn't have left. Hence, he can get only 2 candies.
+From stone 2, Krish goes to stone 3 by spending 1 energy. Next , he spends 4 energy and goes to stone 4. Now, to come to stone 1, he needs 1 + 1 + 9 = 11 energy, which he doesn't have left. Hence, he can get only 2 candies.  
+
+## EDITORIAL  
+For this problem, it is clear that for each instruction, we need to sum up the numbers in the array from within the given indices. However, we can't use brute force, as the number of instructions is very large(O(n2) is not acceptable). Hence, we will use the data structure Segment tree, whose vertices will store the sum for certain indices range. Then, sum(i,j) = sum(i,k) + sum (k,j) where k lies between i and j. We will go through the vertices of the tree, and if the indices of the given vertex matches required indices, the value of that vertex will be the answer. Otherwise, we use the above fact if the required indices are part of two vertices.Each instruction can be carried out in O(logn) time, making the overall time complexity as O(nlogn) ( n for the number of instructions).
+
 
 
 
